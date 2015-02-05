@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+$bgColor: #000;
+
+body { background-color: $bgColor; }
+
+@mixin boxes($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+#main {
+	overflow: auto;
+	margin: 300px auto;
+	width: 806px;
+}
+
+.box {
+	@include boxes(100px, 100px);
+	display: inline-block;
+	margin: 0 0 0 10px;
+}
+
+.box:hover {
+
+}
+
+.color {
+	background-color: blue;
+	opacity: 0.3;
+}
+
+#box1 { border: 1px solid red; }
+
+#box2 { border: 1px solid yellow; }
+
+#box3 { border: 1px solid green; }
+
+#box4 { border: 1px solid blue; }
+
+#box5 { border: 1px solid purple; }
+
+#box6 { border: 1px solid white; }
+
+#box7 { border: 1px solid pink; }
