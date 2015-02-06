@@ -10,29 +10,20 @@ $(function(){
 		$(this).removeClass('color');
 	});
 
-
 });
 
-var box1 = document.getElementById('box1');
-var box1Note = document.getElementById('box1_sound');
 
-/*box1.addEventListener('mousedown', function(){
-	box1Note.currentTime = 0;
-	box1Note.play();
-}); */
 
-var boxName = document.getElementsByClassName('box');
-var notes = document.getElementsByName('notes');
+var boxes = document.querySelectorAll('.box');
 
-for (var j = 0; j < notes.length; j++) {
-	var notesVal = notes[j].name;
-	console.log(notesVal);
-}
-
-for (var i = 0; i < boxName.length; i++) {
-	boxName[i].addEventListener('mousedown', function(){
-		var boxId = this.id;
-		console.log(boxId);
-
+for (var i = 0; i < boxes.length; i++) {
+	boxes[i].addEventListener('click', function(){
+		sound = document.getElementById(this.id + '_sound');
+		sound.currentTime = 0;
+		sound.play();
 	});
 }
+
+
+
+

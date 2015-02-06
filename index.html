@@ -2,11 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>MusicBoxes</title>
+	<title>PainoPlay</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div id="container">
+		
+		<div id="heading">
+			<h1>Welcome To PainoPlay!</h1>
+			<p>Just hit any square below and start jammin'!</p>
+		</div>
+
 		<div id="main">
 			<div id="box1" class="box"></div>
 			<div id="box2" class="box"></div>
@@ -17,12 +23,32 @@
 			<div id="box7" class="box"></div>
 		</div>
 
-		<audio id="box1_sound" name="notes" value="box1">
+		<audio id="box1_sound">
+			<source src="audio/a_note.mp3" type="audio/mp3"></source>
+		</audio>
+
+		<audio id="box2_sound">
+			<source src="audio/b_note.mp3" type="audio/mp3"></source>
+		</audio>
+
+		<audio id="box3_sound">
+			<source src="audio/c_note.mp3" type="audio/mp3"></source>
+		</audio>
+
+		<audio id="box4_sound">
 			<source src="audio/d_note.mp3" type="audio/mp3"></source>
 		</audio>
 
-		<audio id="box2_sound" name="notes">
-			<source src="audio/a_note.mp3" type="audio/mp3"></source>
+		<audio id="box5_sound">
+			<source src="audio/e_note.mp3" type="audio/mp3"></source>
+		</audio>
+
+		<audio id="box6_sound">
+			<source src="audio/f_note.mp3" type="audio/mp3"></source>
+		</audio>
+
+		<audio id="box7_sound">
+			<source src="audio/g_note.mp3" type="audio/mp3"></source>
 		</audio>
 
 	</div>

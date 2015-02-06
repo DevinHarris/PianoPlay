@@ -15,9 +15,25 @@ body { background-color: $bgColor; }
 	height: $height;
 }
 
+@mixin head($color, $width) {
+	color: $color;
+	width: $width;
+}
+
+#heading {
+	
+	@include head(white, 400px);
+	margin: 150px auto 0;
+	text-align: center;
+	
+	h1, p {
+		font-weight: 300;
+	}
+}
+
 #main {
 	overflow: auto;
-	margin: 300px auto;
+	margin: 50px auto;
 	width: 806px;
 }
 
